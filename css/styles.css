@@ -371,6 +371,7 @@ img {
 /* -------------------- customers -------------------- */
 
 .customers-title {
+margin-bottom: 50px;
 font-weight: 700;
 font-size: 36px;
 line-height: 42px;
@@ -419,12 +420,14 @@ color: var(--color-black-text);
 
 /* -------------------footer----------------- */
 .address {
+  display: flex;
+  justify-content: flex-start;
   background: var(--color-background-footer);
   font-style: normal;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.address-container {}
 .logo-footer {
   display: inline-block;
   margin-bottom: 20px;
