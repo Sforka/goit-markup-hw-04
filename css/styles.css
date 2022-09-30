@@ -420,14 +420,17 @@ color: var(--color-black-text);
 
 /* -------------------footer----------------- */
 .address {
-  display: flex;
-  justify-content: flex-start;
   background: var(--color-background-footer);
   font-style: normal;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.address-container {}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
 .logo-footer {
   display: inline-block;
   margin-bottom: 20px;
@@ -435,7 +438,6 @@ color: var(--color-black-text);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
 
   letter-spacing: 0.03em;
 
@@ -569,6 +571,17 @@ color: var(--color-white-text);
 .projects-item {
   width: calc((100% - 60px) / 3);
   background: var(--color-background-white);
+}
+
+.projects-link {
+  display: block;
+}
+
+.projects-link:hover,
+.projects-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-info {
