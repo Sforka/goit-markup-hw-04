@@ -122,7 +122,14 @@ img {
   display: flex;
   align-items: center;
   margin-left: auto;
-  gap: 50px;
+  gap: 30px;
+}
+
+.contacts-icon {
+  display: inline-block;
+  margin-right: 10px;
+  align-items: baseline;
+  fill: var(--color-contact-text);
 }
 
 .contacts-link {
@@ -141,6 +148,11 @@ img {
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--color-active-link);
+}
+
+.contacts-link:hover .contacts-icon,
+.contacts-link:focus .contacts-icon {
+  fill: var(--color-active-link);
 }
 
 .nav-list .current {
@@ -420,6 +432,7 @@ color: var(--color-black-text);
 
 /* -------------------footer----------------- */
 .address {
+  display: block;
   background: var(--color-background-footer);
   font-style: normal;
   padding-top: 60px;
@@ -429,6 +442,10 @@ color: var(--color-black-text);
 .footer-container {
   display: flex;
   align-items: baseline;
+}
+
+.address-container {
+  margin-right: 70px;
 }
 
 .logo-footer {
